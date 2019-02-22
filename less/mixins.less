@@ -1,1 +1,23 @@
 // Mixins Here
+.custom-button() {
+        background-color: #152951;
+        padding: 10px;
+        font-size: 15px;
+        color: white;
+        border-radius: 5px;
+        width: 28%;
+        text-align: center;
+}
+.custom-hover() {
+    background-color: lightgrey;
+    color: #152951;
+    cursor: pointer;
+}
+
+.btn {
+    .custom-button();
+}
+
+.btn:hover {
+    .custom-hover();
+}
